@@ -1,0 +1,25 @@
+{
+  "name": "web-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.4",
+    "dat.gui": "^0.7.7",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "three": "^0.128.0",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "g": "^2.0.1",
+    "stats.js": "^0.17.0"
+  }
+}
