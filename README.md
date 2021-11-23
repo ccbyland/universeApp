@@ -1,5 +1,5 @@
 #### 背景
-![](./static/1.jpg)
+![](./docs/static/bg.jpg)
 1. OpenGL 是用于渲染 2D、3D 图形的跨语言、跨平台的应用程序编程接口（API）。这个接口由近 350 个不同的函数调用组成。
 2. OpenGL ES 是 OpenGL 三维图形API的子集，针对手机、PDA和游戏主机等嵌入式设备而设计。基于OpenGL，一般使用 C 或 Cpp 开发，对前端开发者来说不是很友好。
 3. WebGL 把 JavaScript 和 OpenGL ES 2.0 结合在一起，从而为前端开发者提供了使用 JavaScript 编写 3D 效果的能力。
@@ -10,7 +10,7 @@ Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引�
 ```
 右手坐标系
 ```
-![](./static/2.jpg)
+![](./docs/static/zuobiao.jpg)
 ##### 2：场景
 ```
 是一个容器，主要用于保存、跟踪所要渲染的物体和使用的光源。
@@ -19,7 +19,7 @@ Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引�
 ```
 决定了能够在场景中看到什么。
 ```
-![](./static/5.jpg)
+![](./docs/static/shexiangji.jpg)
 - 右侧是 OrthographicCamera（正交投影相机），他不具有透视效果，即物体的大小不受远近距离的影响，对应的是投影中的正交投影。
 - 左侧是PerspectiveCamera（透视相机），这符合我们正常人的视野，近大远小，对应的是投影中的透视投影。
 ##### 4. 渲染器
@@ -28,10 +28,10 @@ Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引�
 - SVGRenderer
 - WebGLRenderer 使用WebGL将能够利用GPU硬件加速从而提高渲染性能
 ##### WebGLRenderer 与 renderer=new THREE.CanvasRenderer 对比
-![](./static/81.png)
+![](./docs/static/xuanranqi.png)
 
 #### 一：几何体
-![](./static/31.jpg)
+![](./docs/static/jiheti.jpg)
 - 基类几何体 - BufferGeometry
   - 二维几何体
     - 平面几何体 - PlaneGeometry
@@ -45,30 +45,30 @@ Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引�
 ```
 由若干个顶点位置、顶点纹理坐标UV、顶点颜色、顶点法向量、顶点索引等顶点数据组合而成
 ```
-![](./static/100.png)
+![](./docs/static/wangge.png)
 #### 二. 材质
 - 基础网格材质 - MeshBasicMaterial
 ```
 一个以简单着色方式来绘制几何体的材质，不受光照的影响
 ```
-![](./static/11.png)
+![](./docs/static/caizhi.png)
 - 深度着色材质 - MeshDepthMaterial
 ```
 外观特性是由物体到相机的距离决定，可以和其他材质结合创造出逐渐消失的效果
 ```
-![](./static/12.png)
+![](./docs/static/lambert.png)
 - Lambert网格材质 - MeshLambertMaterial
 ```
 对光进行漫反射，用于创建暗淡的不发光物体
 ```
-![](./static/13.png)
+![](./docs/static/phong.png)
 - Phong网格材质 - MeshPhongMaterial
 ```
 对光有反应，用于创建金属类有光泽的物体
 ```
-![](./static/14.png)
+![](./docs/static/jinshu.png)
 #### 三. 光源
-![](./static/3.jpg)
+![](./docs/static/guangyuan.jpg)
 - 环境光 - AmbientLight
 ```
 会均匀的照亮场景中的所有物体
