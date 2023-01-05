@@ -118,10 +118,7 @@ function animateThrottle() {
     // 星球转动
     starTurn && starRotation()
     // 飞船位置控制
-    AIRSHIP &&
-      FLY_CONTROLS &&
-      FLY_CONTROLS.movementSpeed &&
-      updateAirship(CAMERA, SCENE, AIRSHIP, FLY_CONTROLS)
+    AIRSHIP && CAMERA && updateAirship(CAMERA, SCENE, AIRSHIP, FLY_CONTROLS)
   }
   // 计数器
   window.REQUEST_ANIMATION_COUNT++
