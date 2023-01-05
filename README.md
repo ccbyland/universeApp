@@ -119,13 +119,13 @@ Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引�
 ```
 ### 6、粒子和精灵
 > 体验
-http://127.0.0.1:8081/src/chapter-07/08-snowy-scene.html
+http://localhost:3000/learning-threejs/chapter-07/05a-program-based-point-cloud-webgl.html
 ### 7、物理效果
 - PointConstraint - 限制对象在两点间运动
 - HingeConstraint - 创建类似们的约束
 - SliderConstraint - 将移动限制在一个轴上
 > 体验
-http://127.0.0.1:8081/src/chapter-12/01-dominos.html
+http://localhost:3000/learning-threejs/chapter-12/01-basic-scene.html
 
 ## 四、THREE.JS API梳理
 ### 1、继承关系
