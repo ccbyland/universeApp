@@ -3,6 +3,7 @@
 1. OpenGL 是用于渲染 2D、3D 图形的跨语言、跨平台的应用程序编程接口（API）。这个接口由近 350 个不同的函数调用组成。
 2. OpenGL ES 是 OpenGL 三维图形API的子集，针对手机、PDA和游戏主机等嵌入式设备而设计。基于OpenGL，一般使用 C 或 Cpp 开发，对前端开发者来说不是很友好。
 3. WebGL 把 JavaScript 和 OpenGL ES 2.0 结合在一起，从而为前端开发者提供了使用 JavaScript 编写 3D 效果的能力。
+
 ## 二、THREE.JS基础
 Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引擎中，Three.js 是国内资料最多、使用最广泛的。
 ### 1、坐标系
@@ -125,6 +126,7 @@ http://127.0.0.1:8081/src/chapter-07/08-snowy-scene.html
 - SliderConstraint - 将移动限制在一个轴上
 > 体验
 http://127.0.0.1:8081/src/chapter-12/01-dominos.html
+
 ## 四、THREE.JS API梳理
 ### 1、继承关系
   - xxxCamera => Camera => Object3D - 相机
@@ -149,7 +151,7 @@ http://127.0.0.1:8081/src/chapter-12/01-dominos.html
   - translate() 平移
   - rotate() 绕轴旋转
   
-### 五、案例欣赏
+## 五、案例欣赏
 - 人物
 https://threejs.org/examples/#webgl_animation_skinning_blending
 - 房子
@@ -159,7 +161,7 @@ https://threejs.org/examples/#webgl_materials_cubemap_dynamic
 - 粒子
 https://threejs.org/examples/#webgl_buffergeometry_lines
 
-### 六、分享
+## 六、分享
 - 演示：自由翱翔太阳系
   - 控制
     - 控制模式
