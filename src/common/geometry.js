@@ -1,3 +1,7 @@
+/**
+ * 几何体
+ */
+
 const THREE = require('three');
 
 /**

@@ -1,8 +1,12 @@
+/**
+ * 光源
+ */
+
 const THREE = require('three');
 
 /**
  * 创建聚光灯   
- *
+ * 是一种具有锥形效果的光源。比如：手电筒
  * @export
  * @param {*} color 光照颜色，默认为0xffffff
  * @param {*} intensity 光照强度，默认为1
@@ -18,7 +22,7 @@ export function getSpotLight(color, intensity, distance, angle, penumbra, decay)
 
 /**
  * 创建点光源
- *
+ * 是一种单点发光、照射所有方向的光源。比如夜空中的照明弹
  * @export
  * @param {*} color 光照颜色，默认 0xffffff
  * @param {*} intensity 光照强度，默认值 1

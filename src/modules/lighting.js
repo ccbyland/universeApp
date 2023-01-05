@@ -1,3 +1,7 @@
+/**
+ * 光源
+ */
+
 import * as THREE from "three";
 import {
   getSpotLight,

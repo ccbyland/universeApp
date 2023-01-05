@@ -1,3 +1,7 @@
+/**
+ * 星球
+ */
+
 import * as THREE from "three";
 import {
   getSphereGeometry
@@ -267,6 +271,10 @@ function getSubsetTrack(satellite) {
 function getTrack(id, distance) {
   // 添加太阳系行星轨道
   if (id != 'sun') {
+    /**
+     * 三维圆环
+     * 圆环的半径\圆环管子的半径\圆环管道截面的分段数\管道的分段数
+     */
     const torus = new THREE.TorusGeometry(distance, 1, 50, 50);
     const material = new THREE.MeshBasicMaterial({
       color: '#FFFFFF'

@@ -1,3 +1,7 @@
+/**
+ * 粒子
+ */
+
 import * as THREE from "three";
 import {
   getBufferGeometry

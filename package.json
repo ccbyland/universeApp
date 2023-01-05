@@ -1,25 +1,33 @@
 {
-  "name": "web-example",
+  "name": "universeapp",
   "version": "1.0.0",
+  "description": "![](./docs/static/bg.jpg)\r 1. OpenGL 是用于渲染 2D、3D 图形的跨语言、跨平台的应用程序编程接口（API）。这个接口由近 350 个不同的函数调用组成。\r 2. OpenGL ES 是 OpenGL 三维图形API的子集，针对手机、PDA和游戏主机等嵌入式设备而设计。基于OpenGL，一般使用 C 或 Cpp 开发，对前端开发者来说不是很友好。\r 3. WebGL 把 JavaScript 和 OpenGL ES 2.0 结合在一起，从而为前端开发者提供了使用 JavaScript 编写 3D 效果的能力。\r #### 认识THREE.JS\r Three.js是基于原生 WebGL 封装运行的三维引擎，在所有 WebGL 引擎中，Three.js 是国内资料最多、使用最广泛的。\r #### 准备工作\r ##### 1：坐标系\r ```\r 右手坐标系\r ```\r ![](./docs/static/zuobiao.jpg)\r ##### 2：场景\r ```\r 是一个容器，主要用于保存、跟踪所要渲染的物体和使用的光源。\r ```\r ##### 3：摄像机\r ```\r 决定了能够在场景中看到什么。\r ```\r ![](./docs/static/shexiangji.jpg)\r - 右侧是 OrthographicCamera（正交投影相机），他不具有透视效果，即物体的大小不受远近距离的影响，对应的是投影中的正交投影。\r - 左侧是PerspectiveCamera（透视相机），这符合我们正常人的视野，近大远小，对应的是投影中的透视投影。\r ##### 4. 渲染器\r - CanvasRenderer 使用 Canvas 2D Context API 兼容性更高\r - DOMRenderer\r - SVGRenderer\r - WebGLRenderer 使用WebGL将能够利用GPU硬件加速从而提高渲染性能\r ##### WebGLRenderer 与 renderer=new THREE.CanvasRenderer 对比\r ![](./docs/static/xuanranqi.png)",
   "main": "index.js",
-  "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "dev": " npx webpack serve"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccbyland/universeApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccbyland/universeApp/issues"
+  },
+  "homepage": "https://github.com/ccbyland/universeApp#readme",
   "devDependencies": {
-    "css-loader": "^5.2.4",
-    "dat.gui": "^0.7.7",
+    "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.1",
-    "style-loader": "^2.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "stats.js": "^0.17.0",
+    "style-loader": "^3.3.1",
     "three": "^0.128.0",
-    "webpack": "^5.37.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "-": "0.0.1",
-    "g": "^2.0.1",
-    "stats.js": "^0.17.0"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   }
 }

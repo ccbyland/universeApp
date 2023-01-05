@@ -1,3 +1,7 @@
+/**
+ * 基础
+ */
+
 import * as THREE from "three";
 
 /**

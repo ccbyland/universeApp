@@ -13,7 +13,7 @@ export const galaxyList = [{
   'radius': 500, // 半径
   'rotationRadian': 0.002, // 自转速度
   'revolutionRadian': 0.02, // 公转速度
-  'revolutionDirection': 'along', // 公转方向
+  'revolutionDirection': 'along', // 公转方向 along顺时针\anti逆时针
   'isLuminous': true, //自发光
   'subset': [{
       'id': 'mercury',

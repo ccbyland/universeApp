@@ -1,3 +1,7 @@
+/**
+ * 飞船
+ */
+
 import * as THREE from "three";
 import {
   getSphereGeometry

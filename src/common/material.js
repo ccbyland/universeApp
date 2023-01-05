@@ -1,3 +1,7 @@
+/**
+ * 材质
+ */
+
 const THREE = require('three');
 
 /**

@@ -1,3 +1,7 @@
+/**
+ * 辅助工具
+ */
+
 import * as THREE from "three";
 
 /**
